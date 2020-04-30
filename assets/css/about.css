@@ -78,8 +78,7 @@ ul li {
 
 /*--ABOUT SECTION--*/
 /* about head section */
-
-#about-head-section {
+div.col {
   margin-top: 150px;
   
 }
@@ -129,4 +128,9 @@ ul li {
 #team-members img {
   margin-top: -90px;
   border: 10px #ffffff solid;
+ }
+
+ #team-members div.col-md-3 {
+   margin-top: 80px;
+   margin-bottom: 20px;
  }
