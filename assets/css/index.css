@@ -79,51 +79,6 @@ ul li {
     transition: all 1s;
 }
 
-#hero #indicators {
-    margin-top: -350px;
-    float: right;
-    margin-right: 100px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-}
-
-
-/* Image vertical move */
-#img {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
-
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
-
-
-#indicators #blue-circle {
-    color: #007bff;
-}
-
-#indicators #blue-circle:hover {
-    cursor: pointer;
-}
-
-#indicators #black-circle {
-    margin-top: 10px;
-    color: #6c757d;
-}
-
-#indicators #black-circle:hover {
-    margin-top: 10px;
-    cursor: pointer;
-}
-
 /* #hero h1 {
     opacity: 0.9;
 } */
@@ -153,16 +108,47 @@ ul li {
     transition: all 0.5s;
 }
 
+@media (max-width: 1300px) {
+    #hero {
+        height: 750px;
+    }
+}
+
+@media (max-width: 850px) {
+    #hero {
+        height: 600px;
+    }
+}
+
 @media (max-width: 768px) {
     #hero {
         height: 580px;
     }
 }
 
+
+@media (max-width: 767px) {
+    #hero {
+        height: 720px;
+    }
+}
+
+@media (max-width: 762px) {
+    #hero {
+        height: 700px;
+    }
+}
+
+@media (max-width: 750px) {
+    #hero {
+        height: 700px;
+    }
+}
+
 @media (max-width: 576px) {
 
     #hero {
-        height: 930px;
+        height: 750px;
     }
    
     #hero h1 {
@@ -183,7 +169,146 @@ ul li {
     }
 
     #hero a#explore {
-        margin-top: 20px;
+        margin-top: 25px;
         margin-left: 0px;
+    }
+}
+
+@media (max-width: 415px) {
+    #hero {
+        height: 760px;
+    }
+}
+
+@media (max-width: 411px) {
+    #hero {
+        height: 800px;
+    }
+}
+
+@media (max-width: 400px) {
+    #hero {
+        height: 800px;
+    }
+}
+
+@media (max-width: 399px) {
+    #hero {
+        height: 890px;
+    }
+}
+
+@media (max-width: 390px) {
+    #hero {
+        height: 870px;
+    }
+}
+
+@media (max-width: 320px) {
+    #hero {
+        height: 900px;
+    }
+}
+
+
+
+/* Image vertical move */
+#img {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+#hero #indicators {
+    margin-top: -350px;
+    float: right;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+@media (max-width: 1275px) {
+    #hero #indicators {
+        float: none;
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        margin-top: 0px;
+        margin-right: -555px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    #hero #indicators {
+        float: none;
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        margin-top: -80px;
+        margin-right: 0px;
+        margin-left: 480px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #hero #indicators {
+        float: none;
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        margin-top: -80px;
+        margin-right: 0px;
+        margin-left: 480px;
+    }
+}
+
+#indicators #blue-circle {
+    color: #007bff;
+}
+
+#indicators #blue-circle:hover {
+    cursor: pointer;
+}
+
+#indicators #black-circle {
+    margin-top: 10px;
+    color: #6c757d;
+}
+
+#indicators #black-circle:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1275px) {
+    #indicators #blue-circle, #indicators #black-circle {
+        margin-top: 0px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+#indicators #blue-circle, #indicators #black-circle {
+        margin-top: 0px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #indicators #blue-circle, #indicators #black-circle {
+        margin-top: 0px;
+        padding: 5px;
     }
 }
