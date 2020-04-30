@@ -88,6 +88,7 @@ ul li {
     flex-flow: column;
 }
 
+
 /* Image vertical move */
 #img {
     -webkit-animation: mover 1s infinite  alternate;
