@@ -61,7 +61,7 @@ ul li {
 }
 
 #logo:hover {
-    transform: scale(0.9);
+    transform: scale(0.8);
     transition: all 0.5s;
 }
 
