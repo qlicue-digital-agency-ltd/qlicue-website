@@ -80,8 +80,8 @@
         </div>
 
         <span id="indicators">
-            <i class="fas fa-circle text-primary d-none d-lg-block" id="blue-circle"></i>
-            <i class="fas fa-circle text-muted d-none d-lg-block" id="black-circle"></i>
+            <i class="fas fa-circle d-none d-lg-block" id="blue-circle"></i>
+            <i class="fas fa-circle d-none d-lg-block" id="black-circle"></i>
         </span>
 
     </section>
@@ -161,12 +161,16 @@
         // Changing the images and the paragraphs of hero section as you click on indicators
         // On clicking blue indicator
         $('#blue-circle').on('click', function() {
+            $(this).css('color', '#007bff');
+            $('#black-circle').css('color', '#6c757d');
             document.getElementById('para').innerHTML = "Scalable and robust software designs and developement under the highly skilled professionoal software developers. Scalable and robust software designs and developement.";
             document.getElementById('img').src = "assets/icons/icon-7.svg";
         });
 
         // On clicking black indicator
         $('#black-circle').on('click', function() {
+            $(this).css('color', '#007bff');
+            $('#blue-circle').css('color', '#6c757d');
             document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers.We are software development company with highly qualified professional software developers.";
             document.getElementById('img').src = "assets/icons/icon-5.svg";
         });
