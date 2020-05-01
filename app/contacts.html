@@ -131,7 +131,7 @@
 
 
             <!--QLICUE GOOGLE MAP-->
-            <section id="map-container" class="map-container bg-light py-5">
+            <section id="map-container" class="map-container bg-light py-3">
               
                 <div class="row py-4">
                   <div class="col-md-12 z-depth-1-half" style="height:400px;">
@@ -269,7 +269,28 @@
    }
  });
 </script>
- 
+
+<script>
+// Add smooth scrolling
+$('#main-header a, #Bottom, #Top').on('click', function(e) {
+   // check for hash value
+   if (this.hash !== '') {
+     // Prevent default behaviour of an a tag
+     e.preventDefault();
+
+     // Store hash
+     const hash = this.hash;
+
+     // Animate smooth scroll
+     $('html, body').animate({
+       scrollTop: $(hash).offset().top 
+       }, 900, function() {
+       // Add hash to URL after scroll
+       window.location.hash = hash;
+       });
+     }
+  });
+</script>
 
   <script>
 
