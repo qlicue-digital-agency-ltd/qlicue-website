@@ -75,7 +75,7 @@ body {
 
     #contact-section h3 {
       font-weight: bold;
-      letter-spacing: 6px;
+      letter-spacing: 3px;
     }
 
     #contact-section h6 {
@@ -85,6 +85,7 @@ body {
     .card {
         opacity: 0.9;
         border-bottom: 5px solid #007bff;
+        border-radius: 10px;
     }
 
     .card h4 {
@@ -105,4 +106,32 @@ body {
       background: #007bff;
       color: #fff;
       border-radius: 15px;
+      box-shadow: -15px 11px 40px -12px rgba(0, 0, 0, 0.75);
     }
+
+    
+     /* MAIN FOOTER */
+
+#main-footer {
+  background: #333;
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+  #go-top {
+    color: #ffffff;
+    background: #000;
+    border-radius: 40px;
+    opacity: 0.9;
+    transition: 3s;
+  }
+  
+  #go-top:hover {
+    color: #000;
+    background: #fff;
+  }
+  
+  
+  #Bottom {
+    transition: 1s;
+  }
