@@ -29,9 +29,9 @@ nav {
 ul li {
     padding: 10px;
     font-family: 'Dosis', sans-serif;
-    font-size: 19px;
+    font-size: 21px;
     transition: all 0.5s;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* background: #f8f9fa!important; */
 }
 

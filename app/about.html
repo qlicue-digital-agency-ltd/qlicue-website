@@ -67,7 +67,7 @@
       <div class="row">
         <div class="col text-center py-5">
             <h1 class="text-black">About Agency</h1>
-            <h6 class="p-4"><a href="#home" class="text-white">HOME</a><i class="fas fa-angle-right px-2"></i>About agency</h6>
+            <h6 class="p-4"><a href="../index.html" class="text-white">HOME</a><i class="fas fa-angle-right px-2"></i>About agency</h6>
           </div>
         </div>
       </div>
@@ -83,13 +83,13 @@
 
                <!--Descriptions-->
 
-  <section id="About-section" class="bg-light text-dark py-5">
-    <div class="container">
+  <section id="About-section" class="bg-light text-dark">
+    <div class="container py-5">
       <div class="row ">
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-6 col-sm-6">
           <img src="../assets/icons/undraw_team_spirit_hrr4.svg" alt="" class="img-fluid mb-3 ">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-6 col-sm-6">
           <h6>ABOUT US</h6>
           <br>
           <h3>Why We Are Different Digital Agency</h3>
@@ -100,7 +100,7 @@
             </div>
             <div class="p-3 align-self-end">
               <h4>We're Innovative</h4>
-              <p>We build solutions that are designed to make an impact,uniqness,efficiency,and robustness are key features to our clients deliveries</p>
+              <p>We build solutions that are designed to make an impact,uniqness,efficiency, robustness are key features to our clients deliveries</p>
             </div>
           </div>
 
@@ -428,6 +428,97 @@
        </div>
     </section>
 
+
+              <!--FOOTER-->
+        <section id="main-footer" class="py-5">
+          <div class="container pt-4">
+            <div class="row">
+              <div class="col-md-3 p-2">
+                <h4>Qlicue</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Magnam, molestias.</p>
+                   <div class="d-flex">
+                    <div class="p-3">
+                      <a href="http://facebook.com">
+                        <i class="fab fa-facebook text-white"></i>
+                      </a>
+                    </div>
+                    <div class="p-3">
+                      <a href="http://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </div>
+                    <div class="p-3">
+                      <a href="http://instagram.com">
+                        <i class="fab fa-instagram text-white"></i>
+                      </a>
+                    </div>
+              
+                  </div>
+            
+                </div>
+
+                <div class="col-md-3 p-2">
+                  <h4>Help Links</h4>
+                 <p><a href="#about" class="text-white">About</a></p> 
+                 <p><a href="#Work" class="text-white">Work</a></p> 
+                 <p><a href="#Home" class="text-white">Home</a></p> 
+                  <p><a href="#Service" class="text-white">Service</a></p>
+                 <p><a href="#Products" class="text-white">Products</a></p>  
+                </div>
+
+                <div class="col-md-3 p-2">
+                  <h4>Important Links</h4>
+                 <p><a href="#" class="text-white">XXX</a></p> 
+                 <p><a href="#" class="text-white">XXX</a></p> 
+                 <p><a href="#" class="text-white">XXX</a></p> 
+                  <p><a href="#" class="text-white">XXX</a></p>
+                 <p><a href="#" class="text-white">XXX</a></p>  
+                </div>
+
+                <div class="col-md-3 p-2">
+                  <h4>Company Adress</h4> 
+                 <p>Adress: P.o Box 14272, Dsm Tanzania</p> 
+                 <p>Website: www.qlicue.co.tz</p> 
+                  <p>Email: qlicue@gmail.com</p>
+                  <p>Telephone: +255 752 940 596 / 688 020 063</p>
+                </div>
+
+
+              </div>
+                       <hr class="bg-light">
+              <div class="row text-left">
+                <div class="col-sm-3 mt-3">
+                  <span class="lead" style=" font-size: 15px;">
+                    Copyright &copy; Qlicue <span id="year"></span> 
+                    <p style="opacity: 0.5;">All rights reserved</p>
+                  </span>
+                </div>
+
+                <div class="col-sm-6 text-center">
+                  <div class="d-flex">
+                    <div class="p-3">
+                      <p>Terms & Conditions</p>
+                    </div>
+                    <div class="p-3">
+                      <p>Privacy Police</p>
+                    </div>
+                    <div class="p-3">
+                      <p>Contact Us</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3 text-right">
+                    <a href="#home" id="Top">
+                      <i class="fas fa-angle-up fa-lg p-3" data-toggle="tooltip" data-placement="top" title="Top" id="go-top"></i>
+                    </a>
+                </div>
+              </div>
+
+            </div>
+        </section>
+
                        
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -477,6 +568,29 @@
 
 
   </script>
+
+<script>
+  // Add smooth scrolling
+  $('#main-header a, #Bottom, #Top').on('click', function(e) {
+     // check for hash value
+     if (this.hash !== '') {
+       // Prevent default behaviour of an a tag
+       e.preventDefault();
+  
+       // Store hash
+       const hash = this.hash;
+  
+       // Animate smooth scroll
+       $('html, body').animate({
+         scrollTop: $(hash).offset().top 
+         }, 900, function() {
+         // Add hash to URL after scroll
+         window.location.hash = hash;
+         });
+       }
+    });
+  </script>
+
 </body>
 
 </html>
