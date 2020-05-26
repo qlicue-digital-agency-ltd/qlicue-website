@@ -77,11 +77,12 @@ ul li {
 #hero {
     /* background-image: linear-gradient(to top, rgba(30, 144, 255, 0.0), rgba(1, 6, 15, 0.164)); */
     /* background: #f8f9fa!important; */
-    background: linear-gradient( rgba(0, 123, 255, 0.9), rgba(0, 123, 255, 0.6)), url('../img/workers.jpeg');
+    background: linear-gradient( rgba(50, 100, 161, 0.9), rgba(13, 21, 31, 0.9)), url('../img/workers.jpeg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
+    /* filter: contrast(50%); */
 }
 
 #hero #contents {
@@ -109,11 +110,13 @@ ul li {
     color: #f8f9fa;
     font-size: 80px;
     font-weight: bold;
+    /* filter: contrast(90%); */
 }
 
 #hero p {
     line-height: 2.5rem;
     /* mix-blend-mode: overlay; */
+    filter: contrast(90%);
 }
 
  #hero a#get-started {
@@ -146,6 +149,10 @@ ul li {
     background: #006bff;
     mix-blend-mode: normal;
     border: #006bff 1px solid;
+}
+
+#hero #img {
+   filter: contrast(90%);
 }
 
 @media (max-width: 1300px) {
@@ -366,7 +373,7 @@ ul li {
 }
 
 #indicators #blue-circle {
-    color: #343a40;
+    color: #006bff;
 }
 
 #indicators #blue-circle:hover {

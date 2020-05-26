@@ -6,7 +6,7 @@ window.onscroll = function() {
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById('main-header').style.backgroundColor = '#004bff';
+        document.getElementById('main-header').style.backgroundColor = '#006bff';
         // document.getElementById('main-header').style.boxShadow = '0px 0px 0px #007bff';
         document.getElementById('main-header').style.height = '70px';
         document.getElementById('logo').style.width = '80px';
