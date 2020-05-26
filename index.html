@@ -15,6 +15,7 @@
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
     <!-- Main CSS-->
     <link rel="stylesheet" href="assets/css/index.css">
   </head>
@@ -25,7 +26,7 @@
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="main-header">
             <div class="container">
                 <a href="#home" class="navbar-brand mr-auto"><img src="assets/icons-app/qlicue.png" width="110" alt="qlicue-logo" id="logo"></a>
-                <button class="navbar-toggler bg-success" data-toggle="collapse" data-target="#navMenuCollapse">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenuCollapse">
                     <!-- <h6 class="my-2">Menu</h6> -->
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -66,14 +67,14 @@
                         <h1 class="display-4">Qlicue Digital Agency</h1>
                         <br>
                         <p class="lead text-light" id="para">
-                            Scalable and robust software designs and developement under the highly skilled professionoal software developers.
+                            Scalable and robust software designs and developement under the highly skilled professional software developers.
                         </p>
                         <br>
                         <a href="#" class="btn btn-primary px-5 py-3" id="get-started">Get started</a>
                         <a href="#" class="btn btn-outline-primary px-5 py-3" id="explore">Explore More</a>
                         </div>
                     <div class="col-md-12 col-lg-6 d-none d-lg-block" id="hero-content-2">
-                        <img src="assets/icons/icon-7.svg" alt="" class="img-fluid" id="img">
+                        <img src="assets/icons/icon-16.svg" alt="" class="img-fluid" id="img">
                     </div>
                 </div>
             
@@ -154,23 +155,49 @@
 		// Initiating tooltip
         $('[data-toggle]').tooltip();
 
-
         // Changing the images and the paragraphs of hero section as you click on indicators
         // On clicking blue indicator
-        $('#blue-circle').on('click', function() {
-            $(this).css('color', '#343a40');
-            $('#black-circle').css('color', '#f8f9fa');
-            document.getElementById('para').innerHTML = "Scalable and robust software designs and developement under the highly skilled professionoal software developers.";
-            document.getElementById('img').src = "assets/icons/icon-7.svg";
+        $(document).ready(function() {
+            $('#blue-circle').on('click', function() {
+                $('#img, #para').fadeOut(500, function() {
+                    $('#img').attr('src', 'assets/icons/icon-16.svg');
+                    document.getElementById('para').innerHTML = "Scalable and robust software designs and developement under the highly skilled professional software developers.";
+                });
+                $(this).css('color', '#343a40');
+                $('#black-circle').css('color', '#f8f9fa');
+            });
+
+            $('#blue-circle').on('click', function() {
+                $('#img, #para').fadeIn(500, function() {
+                    $('#img').attr('src', 'assets/icons/icon-16.svg');
+                    document.getElementById('para').innerHTML = "Scalable and robust software designs and developement under the highly skilled professional software developers.";
+                });
+                $(this).css('color', '#343a40');
+                $('#black-circle').css('color', '#f8f9fa');
+            });
+
         });
 
         // On clicking black indicator
-        $('#black-circle').on('click', function(e) {
-            e.preventDefault();
-            $(this).css('color', '#343a40');
-            $('#blue-circle').css('color', '#f8f9fa');
-            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers.We are software development company.";
-            document.getElementById('img').src = "assets/icons/icon-5.svg";
+        $(document).ready(function() {
+            $('#black-circle').on('click', function() {
+                $('#img, #para').fadeOut(500, function() {
+                    $('#img').attr('src', 'assets/icons/icon-28.svg');
+                    document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers.";
+                });
+                $(this).css('color', '#343a40');
+                $('#blue-circle').css('color', '#f8f9fa');
+            });
+
+            $('#black-circle').on('click', function() {
+                $('#img, #para').fadeIn(500, function() {
+                    $('#img').attr('src', 'assets/icons/icon-28.svg');
+                    document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers.";
+                });
+                $(this).css('color', '#343a40');
+                $('#blue-circle').css('color', '#f8f9fa');
+            });
+
         });
         
         
