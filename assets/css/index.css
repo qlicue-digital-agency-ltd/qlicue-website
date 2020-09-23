@@ -36,7 +36,11 @@ ul li {
     /* background: #f8f9fa!important; */
 }
 
-@media (max-width: 576px) {
+.navbar-toggler-icon {
+    font-size: 23px;
+}
+
+@media (max-width: 768px) {
     nav {
         height: 140px;
         padding: 0px 0px;
@@ -158,31 +162,31 @@ ul li {
 
 @media (max-width: 1300px) {
     #hero {
-        height: 750px;
+        height: 850px;
     }
 
     #hero #contents {
-        height: 750px;
+        height: 850px;
     }
 }
 
 @media (max-width: 850px) {
     #hero {
-        height: 600px;
+        height: 750px;
     }
 
     #hero #contents {
-        height: 600px;
+        height: 750px;
     }
 }
 
 @media (max-width: 768px) {
     #hero {
-        height: 580px;
+        height: 700px;
     }
 
     #hero #contents {
-        height: 580px;
+        height: 700px;
     }
 }
 
@@ -209,11 +213,11 @@ ul li {
 
 @media (max-width: 750px) {
     #hero {
-        height: 700px;
+        height: 780px;
     }
 
     #hero #contents {
-        height: 700px;
+        height: 780px;
     }
 }
 
