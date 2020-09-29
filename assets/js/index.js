@@ -74,7 +74,7 @@ $(document).ready(function () {
     $('#black-circle').on('click', function () {
         $('#img, #para').fadeOut(500, function () {
             $('#img').attr('src', 'assets/icons/icon-5.svg');
-            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers.";
+            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers who are client satisfaction and service-oriented.";
         });
         $(this).css('color', '#006bff');
         $('#blue-circle').css('color', '#f8f9fa');
@@ -83,7 +83,7 @@ $(document).ready(function () {
     $('#black-circle').on('click', function () {
         $('#img, #para').fadeIn(500, function () {
             $('#img').attr('src', 'assets/icons/icon-5.svg');
-            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers.";
+            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers who are client satisfaction and service-oriented.";
         });
         $(this).css('color', '#006bff');
         $('#blue-circle').css('color', '#f8f9fa');

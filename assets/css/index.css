@@ -75,7 +75,7 @@ ul li {
 ----------------------------------------------------*/
 
 #hero {
-    background: linear-gradient(rgba(50, 100, 161, 0.9), rgba(13, 21, 31, 0.8)), url('../img/workers.jpeg');
+    background: linear-gradient(rgba(50, 100, 161, 0.9), rgba(13, 21, 31, 0.8)), url('../img/hero/hero.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
