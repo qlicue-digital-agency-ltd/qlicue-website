@@ -1,116 +1,118 @@
 /* --------------------------------------------------
 # General
 ----------------------------------------------------*/
+
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /* --------------------------------------------------
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --------------------------------------------------
   # Header - Navigation
   ----------------------------------------------------*/
-  
-  
+
+nav {
+  height: 140px;
+  padding: 24px 16px;
+  transition: all 0.5s ease-in-out;
+}
+
+ul li {
+  padding: 10px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 19px;
+  transition: all 0.5s;
+  background: #f8f9fa!important;
+}
+
+@media (max-width: 576px) {
   nav {
     height: 140px;
-    padding: 24px 16px;
-    transition: all 0.5s ease-in-out;
+    padding: 0px 0px;
+    transition: all 1s;
   }
-  
+  div.collapse {
+    margin-bottom: 20px;
+    transition: all 1s;
+  }
   ul li {
-    padding: 10px;
-    font-family: 'Dosis', sans-serif;
-    font-size: 19px;
-    transition: all 0.5s;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    justify-content: flex-start;
     background: #f8f9fa!important;
+    transition: all 1s;
   }
-  
-  @media (max-width: 576px) {
-    nav {
-        height: 140px;
-        padding: 0px 0px;
-        transition: all 1s;
-    }
-  
-    div.collapse {
-        margin-bottom: 20px;
-        transition: all 1s;
-    }
-  
-    ul li {
-        border-bottom: 2px solid #000000;
-        display: flex;
-        justify-content: flex-start;
-        background: #f8f9fa!important;
-        transition: all 1s;
-    }
-            
-  }
-  
-  #logo {
-    transition: all 0.5s;
-  }
-  
-  #logo:hover {
-    transform: scale(0.8);
-    transition: all 0.5s;
-  }
-  
+}
+
+#logo {
+  transition: all 0.5s;
+}
+
+#logo:hover {
+  transform: scale(0.8);
+  transition: all 0.5s;
+}
+
 /*--CONTACT SECTION--*/
+
 /* contact head section */
 
- div.col {
-    margin-top: 150px;
-    }  
+div.col {
+  margin-top: 150px;
+}
 
-    /*--CONTACT SECTION--*/
-    /* contact-descriptions */
+/*--CONTACT SECTION--*/
 
-    #contact-section h3 {
-      font-weight: bold;
-      letter-spacing: 3px;
-    }
+/* contact-descriptions */
 
-    #contact-section h6 {
-      font-weight: bold;
-    }
+#contact-section h3 {
+  font-weight: bold;
+  letter-spacing: 3px;
+}
 
-    .card {
-        opacity: 0.9;
-        border-bottom: 5px solid #007bff;
-        border-radius: 10px;
-    }
+#contact-section h6 {
+  font-weight: bold;
+}
 
-    .card h4 {
-      font-size: 25px;
-      letter-spacing: 2px;
-      font-family: sans-serif;
-    }
+.card {
+  opacity: 0.9;
+  border-bottom: 5px solid #007bff;
+  border-radius: 10px;
+}
 
-    .form-control {
-        border-radius: 20px;
-    }
+.card h4 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
 
-    #CAD {
-      border-bottom: none;
-    }
+.form-control {
+  border-radius: 20px;
+}
 
-    #CAD a {
-      background: #007bff;
-      color: #fff;
-      border-radius: 15px;
-      box-shadow: -15px 11px 40px -12px rgba(0, 0, 0, 0.75);
-    }
+#CAD {
+  border-bottom: none;
+}
 
-    
-     /* MAIN FOOTER */
+#CAD a {
+  background: #007bff;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: -15px 11px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+#map-container .map {
+  width: 100%;
+}
+
+/* MAIN FOOTER */
 
 #main-footer {
   background: #333;
@@ -118,20 +120,19 @@ body {
   color: #ffffff;
 }
 
-  #go-top {
-    color: #ffffff;
-    background: #000;
-    border-radius: 40px;
-    opacity: 0.9;
-    transition: 3s;
-  }
-  
-  #go-top:hover {
-    color: #000;
-    background: #fff;
-  }
-  
-  
-  #Bottom {
-    transition: 1s;
-  }
+#go-top {
+  color: #ffffff;
+  background: #000;
+  border-radius: 40px;
+  opacity: 0.9;
+  transition: 3s;
+}
+
+#go-top:hover {
+  color: #000;
+  background: #fff;
+}
+
+#Bottom {
+  transition: 1s;
+}
