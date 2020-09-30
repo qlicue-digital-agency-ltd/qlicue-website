@@ -1,5 +1,4 @@
-/* When the user scrolls down 80px from top of the document, resizes logo's width and gives the navbar bottom border */
-
+// When the user scrolls down 80px from top of the document, resizes logo's width and gives the navbar bottom border
 window.onscroll = function () {
     scrollFunction();
 };
@@ -7,18 +6,14 @@ window.onscroll = function () {
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById('main-header').style.backgroundColor = '#006bff';
-        // document.getElementById('main-header').style.boxShadow = '0px 0px 0px #007bff';
         document.getElementById('main-header').style.height = '70px';
         document.getElementById('logo').style.width = '80px';
-        // document.getElementById('logo').style.background = '#f8f9fa';
     }
 
     else {
         document.getElementById('main-header').style.backgroundColor = '';
-        // document.getElementById('main-header').style.boxShadow = '0px 0px 0px';
         document.getElementById('main-header').style.height = '140px';
         document.getElementById('logo').style.width = '110px';
-        // document.getElementById('logo').style.background = '#f8f9fa';
     }
 }
 
@@ -52,7 +47,7 @@ $(document).ready(function () {
     $('#blue-circle').on('click', function () {
         $('#img, #para').fadeOut(500, function () {
             $('#img').attr('src', 'assets/icons/icon-7.svg');
-            document.getElementById('para').innerHTML = "Scalable and robust software designs and developement under the highly skilled professional software developers.";
+            document.getElementById('para').innerHTML = "Scalable and robust software designs and development under the highly skilled professional software developers.";
         });
         $(this).css('color', '#006bff');
         $('#black-circle').css('color', '#f8f9fa');
@@ -61,7 +56,7 @@ $(document).ready(function () {
     $('#blue-circle').on('click', function () {
         $('#img, #para').fadeIn(500, function () {
             $('#img').attr('src', 'assets/icons/icon-7.svg');
-            document.getElementById('para').innerHTML = "Scalable and robust software designs and developement under the highly skilled professional software developers.";
+            document.getElementById('para').innerHTML = "Scalable and robust software designs and development under the highly skilled professional software developers.";
         });
         $(this).css('color', '#006bff');
         $('#black-circle').css('color', '#f8f9fa');
@@ -74,7 +69,7 @@ $(document).ready(function () {
     $('#black-circle').on('click', function () {
         $('#img, #para').fadeOut(500, function () {
             $('#img').attr('src', 'assets/icons/icon-5.svg');
-            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers who are client satisfaction and service-oriented.";
+            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers who are service-oriented.";
         });
         $(this).css('color', '#006bff');
         $('#blue-circle').css('color', '#f8f9fa');
@@ -83,7 +78,7 @@ $(document).ready(function () {
     $('#black-circle').on('click', function () {
         $('#img, #para').fadeIn(500, function () {
             $('#img').attr('src', 'assets/icons/icon-5.svg');
-            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers who are client satisfaction and service-oriented.";
+            document.getElementById('para').innerHTML = "We are software development company with highly qualified professional software developers who are service-oriented.";
         });
         $(this).css('color', '#006bff');
         $('#blue-circle').css('color', '#f8f9fa');
